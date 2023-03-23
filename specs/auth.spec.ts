@@ -1,7 +1,7 @@
 import axios from "axios";
 import { describe, it, before } from "mocha";
 import { expect } from "chai";
-const login = require("../helpers/login");
+import { login } from "../helpers/login";
 
 describe("Authorization", () => {
   describe("Successful login", () => {

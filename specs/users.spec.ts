@@ -1,14 +1,14 @@
 import axios  from "axios";
 import { describe, it, before } from "mocha";
 import { expect } from "chai";
-const { user } =  require("../helpers");
+import { create }  from "../helpers/user/create";
 let response;
 let userId: number;
 let alreadyDeletedUserId = "1052278b-7029-45fd-88c3-631947395d30";
 
 describe("Create new user", () => {
   before(async () => {
-    response = await user.create();
+    response = await create();
   });
   it("Status code is 200", async () => {
     expect(response.status).to.eq(200);
