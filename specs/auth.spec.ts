@@ -1,6 +1,6 @@
-const axios = require("axios");
-const { describe, it, before } = require("mocha");
-const { expect } = require("chai");
+import axios from "axios";
+import { describe, it, before } from "mocha";
+import { expect } from "chai";
 const login = require("../helpers/login");
 
 describe("Authorization", () => {

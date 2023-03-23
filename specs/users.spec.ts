@@ -1,9 +1,9 @@
-const axios = require("axios");
-const { describe, it, before } = require("mocha");
-const { expect } = require("chai");
+import axios  from "axios";
+import { describe, it, before } from "mocha";
+import { expect } from "chai";
 const { user } =  require("../helpers");
 let response;
-let userId;
+let userId: number;
 let alreadyDeletedUserId = "1052278b-7029-45fd-88c3-631947395d30";
 
 describe("Create new user", () => {
