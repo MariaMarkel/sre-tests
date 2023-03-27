@@ -1,6 +1,7 @@
-const axios = require("axios");
+import axios from "axios";
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-require("dotenv/config");
 before(async () => {
   const response = await axios.post(`${process.env.BASE_URL}/auth`, {
     login: process.env.LOGIN,

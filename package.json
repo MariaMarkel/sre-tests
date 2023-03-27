@@ -4,7 +4,9 @@
   "description": "Paysis API testing with axios",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "npx mocha --require ts-node/register specs/**/*.spec.ts",
+    "test_auth_spec": "npx mocha --require ts-node/register specs/auth.spec.ts",
+    "test_users_spec": "npx mocha --require ts-node/register specs/users.spec.ts",
     "format": "prettier . --write --list-different",
     "lint": "prettier . --check"
   },

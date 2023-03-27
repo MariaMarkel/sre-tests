@@ -1,7 +1,8 @@
-// const axios = require('axios');
-import axios from 'axios';
+import axios from "axios";
+import * as dotenv from 'dotenv';
+dotenv.config();
+import "../../setup";
 
-// module.exports = async function create () {
 export async function create () {
     return axios.post(`${process.env.BASE_URL}/users`, null,
     {
