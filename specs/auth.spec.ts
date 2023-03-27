@@ -2,6 +2,8 @@ import axios from "axios";
 import { describe, it, before } from "mocha";
 import { expect } from "chai";
 import { login } from "../helpers/login";
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 describe("Authorization", () => {
   describe("Successful login", () => {

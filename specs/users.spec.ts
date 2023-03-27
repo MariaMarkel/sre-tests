@@ -2,6 +2,8 @@ import axios  from "axios";
 import { describe, it, before } from "mocha";
 import { expect } from "chai";
 import { create }  from "../helpers/user/create";
+import * as dotenv from 'dotenv';
+dotenv.config();
 let response;
 let userId: number;
 let alreadyDeletedUserId = "1052278b-7029-45fd-88c3-631947395d30";
